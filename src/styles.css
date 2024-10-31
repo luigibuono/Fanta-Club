@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+html, body { height: 100%; }
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    position: relative; 
+    background-color: #001f3f;
+  }
+  
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Imposta altezza minima al 100% della finestra */
+}
+
+.content-wrapper > * {
+    flex: 1; /* Consenti al contenuto di crescere */
+}
+

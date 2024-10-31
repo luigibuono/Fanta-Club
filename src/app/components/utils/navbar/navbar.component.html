@@ -1,0 +1,113 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white" [ngClass]="getNavbarClasses()">
+    <div class="container">
+        <!-- Logo o voce a sinistra -->
+        <a class="navbar-brand" href="#">
+            <img src="../../../../assets/Fanta Club.png" style="width:80px" alt="Logo" class="img-fluid mr-2">
+           SERIE A
+        </a>
+
+        <!-- Ricerca visibile solo su schermi grandi -->
+        <div class="search-large d-none d-lg-block">
+            <input
+            #searchBoxLarge
+            type="text"
+            id="searchBoxLarge"
+            placeholder="Search"
+            class="form-control"
+            />
+        </div>
+
+        <!-- Pulsante di toggle per la navbar responsiva -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+        [attr.aria-expanded]="!isNavbarCollapsed" (click)="toggleNavbar()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Voci di menu sulla destra -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav" [ngClass]="{'show': !isNavbarCollapsed}">
+            <ul class="navbar-nav">
+                 <!-- Ricerca, visibile solo su schermi piccoli -->
+                <li class="nav-item d-lg-none search-small">
+                    <input
+                    #searchBox
+                    type="text"
+                    id="searchBox"
+                    placeholder="Search"
+                    class="form-control"
+                    />
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"   style="cursor: pointer;">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Competizioni
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Girone A</a></li>
+                              <li><a class="dropdown-item" href="#">Girone B</a></li>
+                              <li><a class="dropdown-item" href="#">Girone C</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"   style="cursor: pointer;">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Classifiche
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Girone A</a></li>
+                              <li><a class="dropdown-item" href="#">Girone B</a></li>
+                              <li><a class="dropdown-item" href="#">Girone C</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  style="cursor: pointer;">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Premi
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Girone A</a></li>
+                              <li><a class="dropdown-item" href="#">Girone B</a></li>
+                              <li><a class="dropdown-item" href="#">Girone C</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  style="cursor: pointer;">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Toto Calcio
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Girone A</a></li>
+                              <li><a class="dropdown-item" href="#">Girone B</a></li>
+                              <li><a class="dropdown-item" href="#">Girone C</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  style="cursor: pointer;">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 50%;">
+                                <i class="fa-solid fa-user"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Login</a></li>
+                              <li><a class="dropdown-item" href="#">Registrati</a></li>
+                              <li><a class="dropdown-item" href="#">Girone C</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
