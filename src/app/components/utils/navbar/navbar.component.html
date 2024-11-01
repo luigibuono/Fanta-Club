@@ -3,7 +3,6 @@
         <!-- Logo o voce a sinistra -->
         <a class="navbar-brand" href="#">
             <img src="../../../../assets/Fanta Club.png" style="width:80px" alt="Logo" class="img-fluid mr-2">
-           SERIE A
         </a>
 
         <!-- Ricerca visibile solo su schermi grandi -->
@@ -44,9 +43,9 @@
                                 Competizioni
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Girone A</a></li>
-                              <li><a class="dropdown-item" href="#">Girone B</a></li>
-                              <li><a class="dropdown-item" href="#">Girone C</a></li>
+                              <li><a class="dropdown-item" [routerLink]="['/competition1']">Girone A</a></li>
+                              <li><a class="dropdown-item" [routerLink]="['/competition2']">Girone B</a></li>
+                              <li><a class="dropdown-item" [routerLink]="['/competition3']">Girone C</a></li>
                             </ul>
                         </div>
                     </a>
@@ -58,9 +57,9 @@
                                 Classifiche
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Girone A</a></li>
-                              <li><a class="dropdown-item" href="#">Girone B</a></li>
-                              <li><a class="dropdown-item" href="#">Girone C</a></li>
+                              <li><a class="dropdown-item" [routerLink]="['/ranked1']">Girone A</a></li>
+                              <li><a class="dropdown-item" [routerLink]="['/ranked2']">Girone B</a></li>
+                              <li><a class="dropdown-item" [routerLink]="['/ranked3']">Girone C</a></li>
                             </ul>
                         </div>
                     </a>
@@ -72,9 +71,7 @@
                                 Premi
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Girone A</a></li>
-                              <li><a class="dropdown-item" href="#">Girone B</a></li>
-                              <li><a class="dropdown-item" href="#">Girone C</a></li>
+                              <li><a class="dropdown-item" [routerLink]="['/premi']">Tutti i premi</a></li>
                             </ul>
                         </div>
                     </a>
@@ -86,9 +83,7 @@
                                 Toto Calcio
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Girone A</a></li>
-                              <li><a class="dropdown-item" href="#">Girone B</a></li>
-                              <li><a class="dropdown-item" href="#">Girone C</a></li>
+                              <li><a class="dropdown-item" [routerLink]="['/totoCalcio']"href="#">Serie A</a></li>
                             </ul>
                         </div>
                     </a>
@@ -100,9 +95,8 @@
                                 <i class="fa-solid fa-user"></i>
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Login</a></li>
-                              <li><a class="dropdown-item" href="#">Registrati</a></li>
-                              <li><a class="dropdown-item" href="#">Girone C</a></li>
+                              <li><a class="dropdown-item" [routerLink]="['/login']">Login</a></li>
+                              <li><a class="dropdown-item" [routerLink]="['/register']">Registrati</a></li>
                             </ul>
                         </div>
                     </a>

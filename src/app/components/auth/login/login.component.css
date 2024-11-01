@@ -1,0 +1,30 @@
+.content-wrapper {
+    min-height: 100vh; /* Assicura che il contenuto occupi l'intera altezza della finestra */
+  }
+  
+  .card {
+    border-radius: 10px; /* Angoli arrotondati per il card */
+  }
+  
+  .card-body {
+    padding: 20px; /* Padding interno per il card */
+  }
+  
+  h2 {
+    color: #007bff; /* Colore del titolo */
+  }
+  
+  
+  .text-danger {
+    font-size: 0.9rem; /* Dimensione del testo per i messaggi di errore */
+  }
+  
+  .btn {
+    border-radius: 5px; /* Angoli arrotondati per il bottone */
+  }
+
+  .but1{
+    display: flex!important;
+    justify-content: center!important;
+    margin-top: 2rem!important;
+  }

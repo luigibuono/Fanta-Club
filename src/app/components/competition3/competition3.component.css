@@ -1,0 +1,43 @@
+.table {
+    width: 100%; /* Rende la tabella piena larghezza */
+    border-radius: 0.5rem; /* Angoli arrotondati */
+    overflow: hidden; /* Nasconde eventuali bordi arrotondati */
+}
+
+.table td {
+    padding: 20px; /* Maggiore padding per rendere le celle più grandi */
+    font-size: 1.2rem; /* Aumenta la dimensione del font */
+    text-align: center; /* Allinea il testo al centro */
+}
+
+h2 {
+    background-color: #007bff;
+    width: 200px;
+    text-align: center;
+    color: white; /* Colore del testo */
+    text-align: center; /* Allineamento centrale */
+    padding: 15px 20px; /* Padding verticale 15px, orizzontale 20px */
+    margin: 20px auto; /* Margine verticale 20px, automatico per centrare orizzontalmente */
+    border-radius: 10px; /* Angoli arrotondati */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombra del box per profondità */
+    font-size: 1.75rem; /* Dimensione del testo più grande */
+    font-weight: bold; /* Grassetto per il testo */
+}
+
+
+
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa; /* Colore di sfondo per righe dispari */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e2e6ea; /* Colore al passaggio del mouse */
+}
+
+/* Stile per le righe della tabella */
+.table tbody tr {
+    height: 60px; /* Imposta un'altezza fissa per le righe */
+}
+
+
