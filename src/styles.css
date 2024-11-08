@@ -24,6 +24,7 @@ p{
     color: white;
 }
 
+<<<<<<< HEAD
 .red-banner {
     background-image: url('/assets/banner1.jpg');
     background-size:cover;
@@ -80,3 +81,5 @@ a{
     background-color: red!important;
     font-weight: bold; /* Testo in grassetto per una maggiore visibilità */
 }
+=======
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017

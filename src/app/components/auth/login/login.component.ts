@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+<<<<<<< HEAD
 import { Router } from '@angular/router';
+=======
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017
 
 @Component({
   selector: 'app-login',
@@ -9,6 +12,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
+<<<<<<< HEAD
   message: string | null = null; // Messaggio di successo o errore
 
   // Array fittizio di utenti registrati
@@ -74,3 +78,22 @@ export class LoginComponent implements OnInit {
     }, 920000); // 5 secondi (5000 millisecondi)
   }
 }
+=======
+
+  constructor(private fb: FormBuilder) {
+    this.loginForm = this.fb.group({
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.minLength(6)]],
+    });
+  }
+
+  ngOnInit(): void {}
+
+  onSubmit() {
+    if (this.loginForm.valid) {
+      // Invia il modulo al backend
+      console.log('Login form data:', this.loginForm.value);
+    }
+  }
+}
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017

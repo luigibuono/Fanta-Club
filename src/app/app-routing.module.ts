@@ -11,6 +11,7 @@ import { TotoCalcioComponent } from './components/toto-calcio/toto-calcio.compon
 import { PremiComponent } from './components/premi/premi.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
+<<<<<<< HEAD
 import { AuthGuard } from './guards/auth.guard';
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { CookieComponent } from './components/cookie/cookie.component';
@@ -34,6 +35,22 @@ const routes: Routes = [
   { path: 'termini', component:  TerminiComponent},
   { path: 'regolamento', component:  RegolamentoComponent},
 
+=======
+
+const routes: Routes = [
+  {path:'', component: HomePageComponent},
+  {path:'competition1', component: Competition1Component},
+  {path:'competition2', component: Competition2Component},
+  {path:'competition3', component: Competition3Component},
+  {path:'ranked1', component: Ranked1Component},
+  {path:'ranked2', component: Ranked2Component},
+  {path:'ranked3', component: Ranked3Component},
+  {path:'totoCalcio', component: TotoCalcioComponent},
+  {path:'premi', component:PremiComponent},
+  {path:'login', component:LoginComponent},
+  {path:'register', component:RegisterComponent}
+  
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017
 ];
 
 @NgModule({

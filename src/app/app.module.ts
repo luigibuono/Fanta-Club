@@ -17,6 +17,7 @@ import { TotoCalcioComponent } from './components/toto-calcio/toto-calcio.compon
 import { PremiComponent } from './components/premi/premi.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
+<<<<<<< HEAD
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PrivacyComponent } from './components/privacy/privacy.component';
@@ -24,6 +25,9 @@ import { CookieComponent } from './components/cookie/cookie.component';
 import { TerminiComponent } from './components/termini/termini.component';
 import { CookieBannerComponent } from './components/cookie-banner/cookie-banner.component';
 import { RegolamentoComponent } from './components/regolamento/regolamento.component';
+=======
+import { ReactiveFormsModule } from '@angular/forms';
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017
 
 
 @NgModule({
@@ -43,19 +47,26 @@ import { RegolamentoComponent } from './components/regolamento/regolamento.compo
     PremiComponent,
     LoginComponent,
     RegisterComponent,
+<<<<<<< HEAD
     PrivacyComponent,
     CookieComponent,
     TerminiComponent,
     CookieBannerComponent,
     RegolamentoComponent,
+=======
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< HEAD
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule  
+=======
+    ReactiveFormsModule
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -27,6 +27,7 @@
     display: flex!important;
     justify-content: center!important;
     margin-top: 2rem!important;
+<<<<<<< HEAD
   }
 
   strong, p{
@@ -50,3 +51,6 @@
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3), 0px 8px 16px rgba(0, 0, 0, 0.1);
   }
   
+=======
+  }
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017

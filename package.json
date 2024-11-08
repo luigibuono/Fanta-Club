@@ -19,7 +19,10 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "bootstrap": "^5.3.3",
+<<<<<<< HEAD
     "emailjs-com": "^3.2.0",
+=======
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

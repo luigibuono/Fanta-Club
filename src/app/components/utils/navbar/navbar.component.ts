@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
+=======
+import { Component, ElementRef, HostListener } from '@angular/core';
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017
 
 @Component({
   selector: 'app-navbar',
@@ -10,14 +14,25 @@ export class NavbarComponent {
   private lastScrollPosition = 0;
   public isScrolledUp = false;
   isNavbarCollapsed = true;
+<<<<<<< HEAD
   private highlightTimeout: any = null; // Timer per rimuovere l'evidenziazione
 
   constructor(private router: Router) {}
+=======
+
+  constructor(private el: ElementRef) {}
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+<<<<<<< HEAD
     this.isScrolledUp = currentScrollPosition < this.lastScrollPosition;
+=======
+
+    this.isScrolledUp = currentScrollPosition < this.lastScrollPosition;
+
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017
     this.lastScrollPosition = currentScrollPosition;
   }
 
@@ -32,6 +47,7 @@ export class NavbarComponent {
     this.isNavbarCollapsed = !this.isNavbarCollapsed;
   }
 
+<<<<<<< HEAD
   logout() {
     localStorage.removeItem('isAuthenticated');
     this.router.navigate(['/login']);
@@ -104,3 +120,6 @@ private removeHighlight(): void {
     });
 }
 }
+=======
+}
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017

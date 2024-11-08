@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 import emailjs from 'emailjs-com';
+=======
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017
 
 @Component({
   selector: 'app-premi',
@@ -7,6 +10,7 @@ import emailjs from 'emailjs-com';
   styleUrls: ['./premi.component.css']
 })
 export class PremiComponent {
+<<<<<<< HEAD
   checklist = [
     { name: 'Opzione 1', selected: false, image: 'assets/banner1.jpg' },
     { name: 'Opzione 2', selected: false, image: 'assets/banner1.jpg' },
@@ -63,4 +67,7 @@ export class PremiComponent {
         this.emailError = 'Si è verificato un errore nell\'invio dell\'email. Riprova più tardi.';
       });
   }
+=======
+
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017
 }

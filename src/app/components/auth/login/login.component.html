@@ -2,6 +2,7 @@
 
 <div class="content-wrapper">
   <div class="container mt-5 mb-5 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+<<<<<<< HEAD
     
     <div class="card shadow-lg access-card" style="width: 100%; max-width: 400px;">
       <div class="card shadow-lg p-3" style="background-color: #f8f9fa;">
@@ -21,6 +22,11 @@
           {{ message }}
         </div>
 
+=======
+    <div class="card shadow" style="width: 100%; max-width: 400px;"> <!-- Limita la larghezza massima -->
+      <div class="card-body">
+        <h2 class="text-center mb-4">Login</h2>
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
             <label for="email">Email</label>
@@ -40,8 +46,13 @@
             </div>
           </div>
 
+<<<<<<< HEAD
           <div class="text-center but1">
             <button type="submit" class="btn btn-primary btn-block" [disabled]="loginForm.invalid">Accedi</button>
+=======
+          <div class="but1">
+            <button type="submit" class="btn btn-primary btn-block">Accedi</button>
+>>>>>>> 637f16f4d161598304e0a1496d5e28b2fbc79017
           </div>
         </form>
       </div>
