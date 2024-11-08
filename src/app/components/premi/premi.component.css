@@ -1,0 +1,127 @@
+.red-banner {
+    background-image: url('/assets/banner2.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.t1{
+    font-weight:800;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.p1{
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.b1{
+    background-color: #01a8e8;
+    border: none; 
+    border-radius: 8px; 
+    padding: 12px 24px; 
+    font-size: 16px; 
+    color: white; 
+    cursor: pointer; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
+}
+
+.b1:hover {
+    background: linear-gradient(90deg, #ff6347, #ff4500); 
+}
+
+.b1:active {
+    transform: scale(0.98); 
+}
+
+/* Centra il contenuto della pagina */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Rende la sezione centrale anche se la pagina ha contenuti poco alti */
+  }
+  
+  .red-banner {
+    width: 100%;
+    margin: 0 auto; /* Centra il banner */
+    text-align: center; /* Centra il testo */
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra gli item */
+    gap: 20px; /* Distanza tra le opzioni */
+  }
+  
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra ogni opzione */
+    width: 45%; /* Due opzioni per riga */
+    margin-bottom: 10px; /* Distanza tra le righe */
+  }
+  
+  .checkbox-item label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .item-image {
+    width: 200px;  /* Imposta la dimensione dell'immagine */
+    height: auto;
+    margin-right: 10px; /* Distanza tra l'immagine e il nome */
+  }
+  
+  .btn-primary {
+    margin-top: 20px;
+    width: 200px;
+    margin: 20px auto 0; /* Centra il pulsante */
+    display: block;
+  }
+  
+  .alert {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .checkbox-item {
+      width: 100%;  /* Una sola opzione per riga su schermi piccoli */
+    }
+  
+    .btn-primary {
+      width: 100%;
+    }
+  }
+  
+  

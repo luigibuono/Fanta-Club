@@ -1,0 +1,8 @@
+<div *ngIf="!cookiesAccepted" class="cookie-banner">
+    <p>
+      Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito.
+      Per saperne di più, consulta la nostra <a [routerLink]="['/cookie']">Cookie Policy</a>.
+    </p>
+    <button class="accept-cookie" (click)="acceptCookies()">Accetta</button>
+  </div>
+  

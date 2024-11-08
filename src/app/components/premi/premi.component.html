@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+
+<div class="content-wrapper">
+  <div class="container mt-5 mb-5">
+    <hr>
+    <div class="red-banner">
+      <div class="banner-content">
+        <h3 class="t1">Inviaci le tue preferenze sui premi e vedremo in che lega inserirti</h3>
+        <form (ngSubmit)="onSubmit()">
+          <div class="checkbox-list">
+            <div *ngFor="let item of checklist" class="checkbox-item">
+              <label>
+                <img [src]="item.image" alt="{{item.name}}" class="item-image" />
+                {{ item.name }}
+                <input type="checkbox" style="width: 100px;"[(ngModel)]="item.selected" name="{{item.name}}" />
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:200px">Invia Selezione</button>
+        </form>
+        
+        <!-- Messaggio di invio -->
+        <div *ngIf="isEmailSent" class="alert alert-success mt-3">
+          <strong>Successo!</strong> La tua email è stata inviata con successo.
+        </div>
+
+        <!-- Messaggio di errore -->
+        <div *ngIf="emailError" class="alert alert-danger mt-3">
+          <strong>Errore!</strong> {{ emailError }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

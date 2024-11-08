@@ -1,0 +1,32 @@
+.content-wrapper {
+    min-height: 100vh; /* Occupare tutta l'altezza della finestra */
+  }
+  
+  .card {
+    border-radius: 10px; /* Angoli arrotondati */
+    padding: 20px; /* Padding interno per il card */
+  }
+  
+  .card-body {
+    padding: 20px; /* Padding interno per il corpo del card */
+  }
+  
+  h2 {
+    color: #007bff; /* Colore del titolo */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Colore primario */
+    border-color: #007bff; /* Colore del bordo */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Colore di sfondo al passaggio del mouse */
+    border-color: #0056b3; /* Colore del bordo al passaggio del mouse */
+  }
+  
+.but1{
+    display: flex!important;
+    justify-content: center!important;
+    margin-top: 2rem!important;
+  }

@@ -1,0 +1,52 @@
+.content-wrapper {
+    min-height: 100vh; /* Assicura che il contenuto occupi l'intera altezza della finestra */
+  }
+  
+  .card {
+    border-radius: 10px; /* Angoli arrotondati per il card */
+  }
+  
+  .card-body {
+    padding: 20px; /* Padding interno per il card */
+  }
+  
+  h2 {
+    color: #007bff; /* Colore del titolo */
+  }
+  
+  
+  .text-danger {
+    font-size: 0.9rem; /* Dimensione del testo per i messaggi di errore */
+  }
+  
+  .btn {
+    border-radius: 5px; /* Angoli arrotondati per il bottone */
+  }
+
+  .but1{
+    display: flex!important;
+    justify-content: center!important;
+    margin-top: 2rem!important;
+  }
+
+  strong, p{
+    color:black;
+  }
+
+  .access-card {
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.3), -10px 0px 30px rgba(0, 0, 0, 0.3), 0px 12px 30px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .access-card:hover {
+    box-shadow: 15px 0px 35px rgba(0, 0, 0, 0.4), -15px 0px 35px rgba(0, 0, 0, 0.4), 0px 16px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .shadow-effect {
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3), 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  

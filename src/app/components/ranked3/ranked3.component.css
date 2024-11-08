@@ -1,0 +1,35 @@
+.table {
+    width: 100%; /* Imposta la larghezza della tabella al 100% */
+    margin-top: 20px; /* Spazio sopra la tabella */
+}
+
+.table th {
+    background-color: #007bff; /* Colore di sfondo per le intestazioni */
+    color: white; /* Colore del testo delle intestazioni */
+}
+
+.table td {
+    text-align: center; /* Allinea il testo delle celle al centro */
+    vertical-align: middle; /* Allinea verticalmente il contenuto */
+    padding: 5px; /* Riduci il padding per le celle */
+    font-size: 1rem; /* Dimensione del testo */
+}
+
+.table td:first-child {
+    width: 50px; /* Imposta una larghezza fissa per la colonna dei numeri */
+}
+
+h2 {
+    background-color: #007bff;
+    width: 200px;
+    text-align: center;
+    color: white; /* Colore del testo */
+    text-align: center; /* Allineamento centrale */
+    padding: 15px 20px; /* Padding verticale 15px, orizzontale 20px */
+    margin: 20px auto; /* Margine verticale 20px, automatico per centrare orizzontalmente */
+    border-radius: 10px; /* Angoli arrotondati */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombra del box per profondità */
+    font-size: 1.75rem; /* Dimensione del testo più grande */
+    font-weight: bold; /* Grassetto per il testo */
+}
+

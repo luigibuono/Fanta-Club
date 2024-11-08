@@ -1,0 +1,51 @@
+.red-banner {
+    background-image: url('/assets/banner1.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.t1{
+    font-weight:800;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.p1{
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.b1{
+    background-color: #01a8e8;
+    border: none; 
+    border-radius: 8px; 
+    padding: 12px 24px; 
+    font-size: 16px; 
+    color: white; 
+    cursor: pointer; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
+}
+
+.b1:hover {
+    background: linear-gradient(90deg, #ff6347, #ff4500); 
+}
+
+.b1:active {
+    transform: scale(0.98); 
+}

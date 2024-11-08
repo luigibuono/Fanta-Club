@@ -1,0 +1,61 @@
+<app-navbar></app-navbar>
+
+<div class="content-wrapper">
+  <div class="container mt-5 mb-5 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow" style="width: 100%; max-width: 400px;">
+      <div class="card-body">
+        <h2 class="text-center mb-4">Registrazione</h2>
+
+        <div *ngIf="successMessage" class="alert alert-success">
+          {{ successMessage }}
+        </div>
+        <div *ngIf="errorMessage" class="alert alert-danger">
+          {{ errorMessage }}
+        </div>
+
+        <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="username">Nome Utente</label>
+            <input type="text" id="username" formControlName="username" class="form-control" />
+            <div *ngIf="registrationForm.get('username')?.invalid && (registrationForm.get('username')?.touched || registrationForm.get('username')?.dirty)" class="text-danger">
+              <small *ngIf="registrationForm.get('username')?.errors?.['required']">Il nome utente è richiesto.</small>
+              <small *ngIf="registrationForm.get('username')?.errors?.['minlength']">Il nome utente deve avere almeno 3 caratteri.</small>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" formControlName="email" class="form-control" />
+            <div *ngIf="registrationForm.get('email')?.invalid && (registrationForm.get('email')?.touched || registrationForm.get('email')?.dirty)" class="text-danger">
+              <small *ngIf="registrationForm.get('email')?.errors?.['required']">L'email è richiesta.</small>
+              <small *ngIf="registrationForm.get('email')?.errors?.['email']">Email non valida.</small>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" formControlName="password" class="form-control" />
+            <div *ngIf="registrationForm.get('password')?.invalid && (registrationForm.get('password')?.touched || registrationForm.get('password')?.dirty)" class="text-danger">
+              <small *ngIf="registrationForm.get('password')?.errors?.['required']">La password è richiesta.</small>
+              <small *ngIf="registrationForm.get('password')?.errors?.['minlength']">La password deve avere almeno 6 caratteri.</small>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Conferma Password</label>
+            <input type="password" id="confirmPassword" formControlName="confirmPassword" class="form-control" />
+            <div *ngIf="registrationForm.errors?.['mismatch'] && (registrationForm.get('confirmPassword')?.touched || registrationForm.get('confirmPassword')?.dirty)" class="text-danger">
+              <small>Le password non corrispondono.</small>
+            </div>
+          </div>
+
+          <div class="text-center but1">
+            <button type="submit" class="btn btn-primary btn-block" [disabled]="registrationForm.invalid">Registrati</button>
+          </div>  
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

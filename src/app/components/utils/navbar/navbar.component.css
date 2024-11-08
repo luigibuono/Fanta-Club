@@ -1,0 +1,37 @@
+/*
+.btn{
+    background-color: #001f3f;
+}
+*/
+
+.search-large input {
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .search-large button {
+    font-size: 1.2rem;
+  }
+  
+  .no-focus:active,
+  .no-focus:focus,
+  .no-focus:focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .highlight {
+    background-color: yellow!important;
+    font-weight: bold; /* Testo in grassetto per una maggiore visibilità */
+}
+
+@media (max-width: 992px) {
+  .navbar .dropdown-menu {
+      width: 300px; /* Larghezza per schermi piccoli */
+  }
+
+  .input-group{
+    width: 300px;
+  }
+}
